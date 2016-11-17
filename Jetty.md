@@ -1,4 +1,4 @@
-# Classes that we should make when creating Java web project 
+# Pattern　when creating Java web project 
 ## Main Class
 - Filter(javax.servlet.Filter)
 - Handler
