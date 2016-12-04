@@ -1,9 +1,10 @@
-``
-	// TODO cacheKey
+```Java 	
+
+// TODO cacheKey
 	HashSet<String> getFromCache(String cacheKey) {
 		String inCache = null;
 		try {
-			JavaType typeRef = 
+			CollectionType typeRef = 
 			 objectMapper.getTypeFactory().constructCollectionType(HashSet.class, String.class);
 			
 			logger.debug("[CACHE] getFromCache class = {} cacheKey = {}", typeRef, cacheKey);
@@ -20,7 +21,7 @@
 		}
 	}
 
-	static <T>String setToCacheByCacheKey(String cacheKey, HashSet<String> entity) {
+	static String setToCacheByCacheKey(String cacheKey, HashSet<String> entity) {
 		if (entity == null) {
 			return null;
 		}
@@ -37,4 +38,4 @@
 			return null;
 		}
 	}
-``
+```
