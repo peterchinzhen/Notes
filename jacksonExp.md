@@ -13,7 +13,7 @@
 			if (Strings.isNullOrEmpty(inCache)) {
 				return null;
 			}
-			return objectMapper.readValue(cacheKey, typeRef);
+			return objectMapper.readValue(inCache, typeRef);
 		} catch (Exception e) {
 			logger.debug("[CACHE] fail to deserialize cache for Object:{}. exception={} key={} value=\n{}",
 					HashSet.class, e.toString(), cacheKey, inCache);
