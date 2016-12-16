@@ -1,3 +1,5 @@
+Jackson is a quite popular toolkit to convert object and JSON string. In most cases, we just use that for entity we defined. I was confused with the way that just to convert to generics.  
+Overlook KV database manpulication code.
 ```Java 	
 
 // TODO cacheKey
