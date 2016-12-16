@@ -1,11 +1,12 @@
-Jackson is a quite popular toolkit to convert object and JSON string. In most cases, we just use that for entity we defined. I was confused with the way that just to convert to generics.  
-Overlook KV database manpulication code.
+*Jackson* is a quite popular toolkit to convert object and JSON string. In most cases, we just use that for entity we defined. I was confused with the way that just to convert to generics.  
+Overlook KV database manipulation code.
 ```Java 	
 
 // TODO cacheKey
 	HashSet<String> getFromCache(String cacheKey) {
 		String inCache = null;
 		try {
+			// must create the CollectionType instance
 			CollectionType typeRef = 
 			 objectMapper.getTypeFactory().constructCollectionType(HashSet.class, String.class);
 			
